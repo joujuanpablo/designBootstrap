@@ -3,6 +3,8 @@
 
 // Background of the presentation
 $backgroundColor: #2b2b2b;
+$coal90: rgba(34, 34, 34, 0.9);
+$coal50: rgba(34, 34, 34, 0.5);
 
 // Primary/body text
 $mainFont: 'Lato', sans-serif;
@@ -39,5 +41,7 @@ $selectionColor: #fff;
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {
-	background: $backgroundColor;
+	//background: $backgroundColor;
+	background: radial-gradient($coal50, $coal90), url('/images/forest-vibes.jpg');
+	background-size: cover;
 }

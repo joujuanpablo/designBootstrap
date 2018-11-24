@@ -14,7 +14,8 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222;
+  background: radial-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.9)), url("/images/forest-vibes.jpg");
+  background-size: cover;
   background-color: #222; }
 
 .reveal {
