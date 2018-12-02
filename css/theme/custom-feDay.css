@@ -299,21 +299,72 @@ body {
 .reveal section img {
   border: none; }
 
+.reveal .link-row {
+  margin-bottom: 20px; }
+
+.reveal a h4 {
+  text-decoration: underline;
+  transition: all ease-in-out 0.2s; }
+  .reveal a h4:hover {
+    transform: scale(1.1, 1.1);
+    transition: all ease-in-out 0.2s; }
+
 .reveal .image-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 200px; }
-  .reveal .image-row a img {
-    max-height: 200px; }
-  .reveal .image-row a img, .reveal .image-row a p, .reveal .image-row a h3 {
-    border: none;
-    margin: 0;
-    transition: all ease-in-out 0.2s; }
-    .reveal .image-row a img:hover, .reveal .image-row a p:hover, .reveal .image-row a h3:hover {
-      transform: scale(1.1, 1.1);
+  height: 100%; }
+  .reveal .image-row a {
+    height: 100%; }
+    .reveal .image-row a img {
+      height: 100%; }
+    .reveal .image-row a img, .reveal .image-row a p, .reveal .image-row a h3 {
+      border: none;
+      margin: 0;
       transition: all ease-in-out 0.2s; }
+      .reveal .image-row a img:hover, .reveal .image-row a p:hover, .reveal .image-row a h3:hover {
+        transform: scale(1.1, 1.1);
+        transition: all ease-in-out 0.2s; }
+
+.reveal .square {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px; }
+  .reveal .square:nth-child(1) {
+    background-color: #0B132B; }
+  .reveal .square:nth-child(2) {
+    background-color: #1C2541; }
+  .reveal .square:nth-child(3) {
+    background-color: #3A506B; }
+  .reveal .square:nth-child(4) {
+    background-color: #5BC0BE; }
+  .reveal .square:nth-child(5) {
+    background-color: #6fffe9; }
+  .reveal .square:nth-child(6) {
+    background-color: white; }
+  .reveal .square:nth-child(7) {
+    background-color: black; }
+  .reveal .square:nth-child(8) {
+    background-color: #5B5C5E; }
+
+.reveal .slides .slideUp.fonts-row.fragment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .reveal .slides .slideUp.fonts-row.fragment .font:nth-child(1) {
+    font-size: 2.5rem;
+    font-family: 'Abril Fatface', cursive;
+    margin: 0; }
+  .reveal .slides .slideUp.fonts-row.fragment .font:nth-child(2) {
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    margin: 10px 0 0; }
+  .reveal .slides .slideUp.fonts-row.fragment .font:nth-child(3) {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0 0; }
 
 .reveal.center .slides section {
   height: 100%;
@@ -322,7 +373,7 @@ body {
   align-items: center;
   justify-content: center; }
 
-section#fragments {
+div.fragments {
   top: initial !important;
   display: flex !important;
   flex-direction: column;
@@ -330,12 +381,12 @@ section#fragments {
   justify-content: center;
   height: auto; }
 
-.reveal .slides section .fragment.slideUp {
+.reveal .slides .fragment.slideUp {
   opacity: 0;
   height: 0;
   margin: 0;
   transition: all 0.3s ease-in-out; }
-  .reveal .slides section .fragment.slideUp.visible {
+  .reveal .slides .fragment.slideUp.visible {
     opacity: 1;
     height: 100px;
     transition: all 0.3s ease-in-out; }
