@@ -296,6 +296,25 @@ body {
 .reveal small code {
   vertical-align: baseline; }
 
+.reveal section img {
+  border: none; }
+
+.reveal .image-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 200px; }
+  .reveal .image-row a img {
+    max-height: 200px; }
+  .reveal .image-row a img, .reveal .image-row a p, .reveal .image-row a h3 {
+    border: none;
+    margin: 0;
+    transition: all ease-in-out 0.2s; }
+    .reveal .image-row a img:hover, .reveal .image-row a p:hover, .reveal .image-row a h3:hover {
+      transform: scale(1.1, 1.1);
+      transition: all ease-in-out 0.2s; }
+
 .reveal.center .slides section {
   height: 100%;
   display: flex !important;
