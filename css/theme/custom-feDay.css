@@ -297,7 +297,9 @@ body {
   vertical-align: baseline; }
 
 .reveal section img {
-  border: none; }
+  border: none;
+  box-shadow: none;
+  background: none; }
 
 .reveal .link-row {
   margin-bottom: 20px; }
@@ -343,7 +345,7 @@ body {
   .reveal .square:nth-child(2) {
     background-color: #1C2541; }
   .reveal .square:nth-child(3) {
-    background-color: #3A506B; }
+    background-color: #004e92; }
   .reveal .square:nth-child(4) {
     background-color: #5BC0BE; }
   .reveal .square:nth-child(5) {
@@ -361,17 +363,34 @@ body {
   flex-direction: column;
   align-items: flex-start; }
   .reveal .slides .slideUp.fonts-row.fragment .font:nth-child(1) {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     font-family: 'Anton', sans-serif;
     margin: 0; }
   .reveal .slides .slideUp.fonts-row.fragment .font:nth-child(2) {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Overpass', sans-serif;
     margin: 10px 0 0; }
   .reveal .slides .slideUp.fonts-row.fragment .font:nth-child(3) {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     margin: 10px 0 0; }
+  .reveal .slides .slideUp.fonts-row.fragment .font.teal {
+    color: #6fffe9; }
+  .reveal .slides .slideUp.fonts-row.fragment .font.grey {
+    color: white; }
+
+.reveal .slides .brand-canvas {
+  background: rgba(0, 78, 146, 0.4);
+  height: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  padding: 11%; }
+  .reveal .slides .brand-canvas .logo-box.slideUp.fragment {
+    height: 50px; }
 
 .reveal.center .slides section {
   height: 100%;
