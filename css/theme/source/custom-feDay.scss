@@ -97,6 +97,14 @@
             transition: all ease-in-out 0.2s;
         }
     }
+    p {
+        margin: 0;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+            transform: scale(1.1, 1.1);
+            transition: all ease-in-out 0.2s;
+        }
+    }
 }
 .reveal .image-row {
     display: flex;
@@ -158,13 +166,14 @@
     align-items: flex-start;
     .font {
         &:nth-child(1) {
-            font-size: 2.5rem;
-            font-family: 'Abril Fatface', cursive;
+            font-size: 3.5rem;
+            font-family: 'Anton', sans-serif;
             margin: 0;
         }
         &:nth-child(2) {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-family: 'Overpass', sans-serif;
+            // font-family: 'Playfair Display', serif;
             margin: 10px 0 0;
         }
         &:nth-child(3) {
